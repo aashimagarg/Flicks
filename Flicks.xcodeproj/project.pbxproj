@@ -13,7 +13,6 @@
 		59B3B0E81C5724DC007FDD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3B0E71C5724DC007FDD39 /* AppDelegate.swift */; };
 		59B3B0ED1C5724DC007FDD39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59B3B0EB1C5724DC007FDD39 /* Main.storyboard */; };
 		59B3B0EF1C5724DC007FDD39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B3B0EE1C5724DC007FDD39 /* Images.xcassets */; };
-		59B3B0F21C5724DC007FDD39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B3B0F01C5724DC007FDD39 /* LaunchScreen.xib */; };
 		59B3B0FE1C5724DC007FDD39 /* FlicksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B3B0FD1C5724DC007FDD39 /* FlicksTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		59B3B0E71C5724DC007FDD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B3B0EC1C5724DC007FDD39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59B3B0EE1C5724DC007FDD39 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		59B3B0F11C5724DC007FDD39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		59B3B0F71C5724DC007FDD39 /* FlicksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlicksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B3B0FC1C5724DC007FDD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59B3B0FD1C5724DC007FDD39 /* FlicksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlicksTests.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				59B3B0E71C5724DC007FDD39 /* AppDelegate.swift */,
 				59B3B0EB1C5724DC007FDD39 /* Main.storyboard */,
 				59B3B0EE1C5724DC007FDD39 /* Images.xcassets */,
-				59B3B0F01C5724DC007FDD39 /* LaunchScreen.xib */,
 				59B3B0E51C5724DC007FDD39 /* Supporting Files */,
 			);
 			path = Flicks;
@@ -240,7 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B3B0ED1C5724DC007FDD39 /* Main.storyboard in Resources */,
-				59B3B0F21C5724DC007FDD39 /* LaunchScreen.xib in Resources */,
 				59B3B0EF1C5724DC007FDD39 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,14 +334,6 @@
 				59B3B0EC1C5724DC007FDD39 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		59B3B0F01C5724DC007FDD39 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59B3B0F11C5724DC007FDD39 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

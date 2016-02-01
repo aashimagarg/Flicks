@@ -23,6 +23,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         
+        let refreshControl = UIRefreshControl()
+        tableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
+        
         let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         hud.show(true)
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
@@ -104,6 +108,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
  
+    func handleRefresh(refreshControl: UIRefreshControl){
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
+        print("refreshed")
+    }
 
     
     /*

@@ -68,14 +68,14 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] User can view movie details by tapping on a cell.
-- [ ] User can select from a tab bar for either **Now Playing** or **Top Rated** movies.
-- [ ] Customize the selection effect of the cell.
+- [X] User can view movie details by tapping on a cell.
+- [X] User can select from a tab bar for either **Now Playing** or **Top Rated** movies.
+- [X] Customize the selection effect of the cell.
 
 The following **optional** features are implemented:
 
 - [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
-- [ ] Customize the navigation bar.
+- [X] Customize the navigation bar.
 
 The following **additional** features are implemented:
 
@@ -90,7 +90,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/DHkg3Wb.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

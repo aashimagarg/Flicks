@@ -15,7 +15,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     var movies: [NSDictionary]?
-    
+    var endpoint: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +25,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let refreshControl = UIRefreshControl()
         tableView.addSubview(refreshControl)
+        
         refreshControl.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
         
         let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         hud.show(true)
+        
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
         let request = NSURLRequest(
             URL: url!,
             cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
@@ -115,14 +117,22 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     
-    /*
+  
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+       
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
+        let movie = movies![indexPath!.row]
+        let detailViewController = segue.destinationViewController as! DetailViewController
+        detailViewController.movie = movie
+        
+        print("prepare for segue called")
+        
     }
-    */
+  
 
 }

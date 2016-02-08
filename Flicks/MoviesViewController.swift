@@ -87,6 +87,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         cell.backgroundColor = UIColor(hexString: "#81BEF7")
         
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(hexString: "#A9D0F5")
+        cell.selectedBackgroundView = backgroundView
+        
         let movie = movies![indexPath.row]
         let title = movie["title"] as? String
         let overview = movie["overview"] as? String
@@ -120,7 +124,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         refreshControl.endRefreshing()
         print("refreshed")
     }
-
+    
+   
     
   
     // MARK: - Navigation

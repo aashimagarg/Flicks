@@ -84,7 +84,7 @@ The following **additional** features are implemented:
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1. modifying views in the app delegate 
-2. creating a serach bar - this is probably something I need to take the time to explore more on my own, but maybe after I explore we can discuss
+2. sometimes the summary of the movie is too long and is truncated/cut off - how to fix this
 
 ## Video Walkthrough 
 

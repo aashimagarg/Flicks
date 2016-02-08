@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftHEXColors
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        UINavigationBar.appearance().barTintColor = UIColor(hexString: "#81BEF7")
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -38,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.viewControllers =  [nowPlayingNavigationController, topRatedNavigationController]
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+        UITabBar.appearance().barTintColor = UIColor(hexString: "#81BEF7")
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
         
         return true
     }

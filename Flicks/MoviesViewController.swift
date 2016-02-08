@@ -9,6 +9,7 @@
 import UIKit
 import AFNetworking
 import MBProgressHUD
+import SwiftHEXColors
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -23,6 +24,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         
+
         let refreshControl = UIRefreshControl()
         tableView.addSubview(refreshControl)
         
@@ -80,7 +82,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
+        
+        cell.backgroundColor = UIColor(hexString: "#81BEF7")
         
         let movie = movies![indexPath.row]
         let title = movie["title"] as? String
